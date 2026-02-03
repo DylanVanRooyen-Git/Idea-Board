@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Board</title>
+    <link rel="icon" type="image/png" href="IB.png">
+    <link rel="stylesheet" href="ideaBoard.css">
+</head>
+<body>
+    
+    <div class="viewport">
+        <div class="board">
+            <div class="grid-background"></div>
+            <svg class="connections"></svg>
+        </div>
+    </div>
+
+
+    <div class="features-container">
+        <button class="features-button" id="featuresBtn">
+            ℹ️ Features
+        </button>
+        <div class="features-dropdown" id="featuresDropdown">
+            <h3>How to Use Idea Board</h3>
+            <div class="feature-item">
+                <strong>🖼️ Add Image Card:</strong>
+                <p>Click the image button at the bottom to add a new image card</p>
+            </div>
+            <div class="feature-item">
+                <strong>📝 Add Text Card:</strong>
+                <p>Click the text button at the bottom to add a new text card</p>
+            </div>
+            <div class="feature-item">
+                <strong>✏️ Edit Text:</strong>
+                <p>Click the pencil icon on a text card to edit its content</p>
+            </div>
+            <div class="feature-item">
+                <strong>📁 Change Image:</strong>
+                <p>Click the folder icon on an image card to upload a new image</p>
+            </div>
+            <div class="feature-item">
+                <strong>🔗 Connect Cards:</strong>
+                <p>Double-click a card, then double-click another card to create a connection</p>
+            </div>
+            <div class="feature-item">
+                <strong>🗑️ Delete Card:</strong>
+                <p>Click the ✖ button on any card to remove it (connections will be deleted too)</p>
+            </div>
+            <div class="feature-item">
+                <strong>✋ Move Cards:</strong>
+                <p>Click and drag any card to reposition it</p>
+            </div>
+            <div class="feature-item">
+                <strong>🖱️ Pan Canvas:</strong>
+                <p>Click and drag on empty space to move around the canvas</p>
+            </div>
+            <div class="feature-item">
+                <strong>🔍 Zoom:</strong>
+                <p>Use mouse wheel to zoom in and out</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="button" id="imgBut" title="Add Image Card">
+            <img src="ImageIcon.png" alt="Add Image" class="images">
+        </button>
+        
+        <button class="button" id="txtBut" title="Add Text Card">
+            <img src="LetterIcon.png" alt="Add Text" class="images">
+        </button>
+    </div>
+
+    <script src="ideaBoard.js"></script>
+</body>
+</html>
